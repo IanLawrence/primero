@@ -31,6 +31,5 @@ notifications:
   slack:
     secure: E89UtPGAQRwR1KxYQ1XKvbNUunkU5s+9X9UzXQbSRy2fxx4X9NdxaV5KhuXdq9yrcARN8hMLEJoK1HewLwFrsmJydsRtBAwWvT5wOjP8eSbCna5MfzXV/598WQPRkvf/ZbXVBw/tpiiUgL4X8yUb7vui/ErThmDutWPd2mlFU7Hhf4zlco8RaY1zy5LAIfGdM82/sWu3dOMAcZmt2BsrxF8CWqjUsmL6rnKfe/QU5NrQOaF9eQEKxfXVoWaEnleu+8PAawcOYlgdJrRny9jR/EnTSCikZkPKzKyyAzvtnhz5Qs6w3+vLMH7WZV5LQT4/P2MBokioUVBhBoRrb1Sup8xYaGbYmKNtSkxFHxsuXnjolauJaoeE1tJzSLP6kJTctfn2VytQaId7awiNhUpJwHwu48NLF9RdaWyX86JXtdJZhE+MKBjzKYaTsNJfQgNiS6f6eZkTWdbGZTulu4VLkddGdWBmEH8FvE+uxWqPUBFIFG5j594wdxwSKFDIQcaz7kYDfdsVLgoSni/fLmLseELU2XBY2Jf+6ONKSTDYJAm9Cobevofwmlipv5cg0AQmJ+tQ6SOCu8EeGR7zxGN0srfbwwVgVFHjncqbt1+pU2IUjalJeYPGUhccLLPCN4+cXnM5Ct/ol/khKDqXZ6IaQUbh35atwzBlHqS3w1WgBU0=
     template:
-    - 'Test run completed for %{repository}/<b>%{branch}</b>: <a href="%{build_url}">%{message}</a>
-      Run duration: %{elapsed_time}'
+    - 'Test run completed for %{repository}/<b>%{branch}</b>: <a href="%{build_url}">%{message}</a> Run duration: %{elapsed_time}'
     format: html
