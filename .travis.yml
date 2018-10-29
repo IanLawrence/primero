@@ -6,9 +6,9 @@ cache: bundler
 addons:
   apt:
     sources:
-      - google-chrome
+    - google-chrome
     packages:
-      - google-chrome-stable
+    - google-chrome-stable
 before_script:
 - mkdir -p log
 - curl -X PUT localhost:5984/_config/admins/primero -d '"primero"'
@@ -28,9 +28,9 @@ branches:
 - development
 - master
 notifications:
-  hipchat:
-    rooms:
-      secure: PUGFh38+Rp/RH46xJTfr0W5XnwIheW5gfddK7FVrP8V928O9WYla3ydtws8n5roa0GGVL4dYFyDJy1DSIemkUKRAXrE5ZVo22PbkKrfBVReSQlKm6w8z2ACu57kkM7xFFs11rKqNL2fFPPre/NeBXfYY/Fc1ydhJW02pQcNrf5AMKu0Pxlj9ms8SeClOBpNH2q2ohCYi6ILrthw2OK9vu1gOptof/6bPtucEqP1lEtMPH7guQngFH3jCippvqph9raMoaXfQlXjcdTkIf0czLlvJBhkTa/gulQBv2BonGBwB13V4evE2bQJMUZfY/FqFq6maBjZU+JEpjP4LqplLLWD8OiE80BKmFW7BDXivR3HCosVHtfpzIQIDqyvK4+DMHI80weentbjTKIqnhE3kpxPyXQdYsvdFLSbHulWS3yB1J0r2GOPAzL5ZlL1dO2zDt9hG/NtoBfSFBEmAxaQWWH+Dw+p/oLRBjBwOoLh/vgbi7vzAOUZ67xN0TgwQ0zNe7RGD8eK2boMf2w9eegaL37Gd/Z4iYLYpHQcOe/y0j1yCflUdsgced0FZ0s0Jmm8sHrQVk1iFCrkGHkx7qXV3xxq+1AzoaWKSCIv3OVGUG1iev5xZYbCAdTQbmsjzc45sEjVDm7wr6AjBaCL7PxtV7aqPT15kp73PrIdxZTkbgug=
+  slack:
+    secure: E89UtPGAQRwR1KxYQ1XKvbNUunkU5s+9X9UzXQbSRy2fxx4X9NdxaV5KhuXdq9yrcARN8hMLEJoK1HewLwFrsmJydsRtBAwWvT5wOjP8eSbCna5MfzXV/598WQPRkvf/ZbXVBw/tpiiUgL4X8yUb7vui/ErThmDutWPd2mlFU7Hhf4zlco8RaY1zy5LAIfGdM82/sWu3dOMAcZmt2BsrxF8CWqjUsmL6rnKfe/QU5NrQOaF9eQEKxfXVoWaEnleu+8PAawcOYlgdJrRny9jR/EnTSCikZkPKzKyyAzvtnhz5Qs6w3+vLMH7WZV5LQT4/P2MBokioUVBhBoRrb1Sup8xYaGbYmKNtSkxFHxsuXnjolauJaoeE1tJzSLP6kJTctfn2VytQaId7awiNhUpJwHwu48NLF9RdaWyX86JXtdJZhE+MKBjzKYaTsNJfQgNiS6f6eZkTWdbGZTulu4VLkddGdWBmEH8FvE+uxWqPUBFIFG5j594wdxwSKFDIQcaz7kYDfdsVLgoSni/fLmLseELU2XBY2Jf+6ONKSTDYJAm9Cobevofwmlipv5cg0AQmJ+tQ6SOCu8EeGR7zxGN0srfbwwVgVFHjncqbt1+pU2IUjalJeYPGUhccLLPCN4+cXnM5Ct/ol/khKDqXZ6IaQUbh35atwzBlHqS3w1WgBU0=
     template:
-      - 'Test run completed for %{repository}/<b>%{branch}</b>: <a href="%{build_url}">%{message}</a> Run duration: %{elapsed_time}'
+    - 'Test run completed for %{repository}/<b>%{branch}</b>: <a href="%{build_url}">%{message}</a>
+      Run duration: %{elapsed_time}'
     format: html
